@@ -14,3 +14,4 @@ programmer:
   random: ${random.int[1024,65536]}
   skill: {java: master, jquery: proficiency}
   company: [baidu,tengxun,alibaba]
+  update: true
