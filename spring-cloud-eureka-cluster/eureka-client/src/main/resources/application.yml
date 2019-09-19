@@ -1,0 +1,11 @@
+server:
+  port: 8888
+# 指定服务命名
+spring:
+  application:
+    name: liu-eureka-client
+# 指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8040/eureka/,http://localhost:8020/eureka/,http://localhost:8030/eureka/
