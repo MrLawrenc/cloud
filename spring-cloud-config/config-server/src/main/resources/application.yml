@@ -13,8 +13,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/heibaiying/spring-samples-for-all/
-          search-paths: spring-cloud/spring-cloud-test-config/
+          #自己远程git上的配置地址
+          uri: https://github.com/MrLawrenc/cloud/
+          search-paths: spring-cloud-test-config/
           # 如果代码仓库是公开的 则 不需要设置用户名和密码
           username:
           password:
