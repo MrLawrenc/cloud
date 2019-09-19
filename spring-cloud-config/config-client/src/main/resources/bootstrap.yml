@@ -19,7 +19,7 @@ spring:
       # 打开ack跟踪的标志（默认关闭）
       trace:
         enabled: true
-  # 使用bus实现热更新
+  # 使用bus实现热更新 更换配置为自己的地址
   rabbitmq:
     host: 127.0.0.1
     port: 5672

@@ -110,8 +110,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/heibaiying/spring-samples-for-all/
-          search-paths: spring-cloud/spring-cloud-test-config/
+          #自己远程git上的配置地址
+          uri: https://github.com/MrLawrenc/cloud/
+          search-paths: spring-cloud-test-config/
           # 如果代码仓库是公开的 则 不需要设置用户名和密码
           username:
           password:
@@ -128,17 +129,14 @@ spring:
 - application.yml 为主配置；
 - application-dev.yml 为开发环境配置。
 
-<div align="center"> <img src="https://github.com/heibaiying/spring-samples-for-all/blob/master/pictures/config-git.png"/> </div>
 
 
 
 #### 3.4  启动eureka和config-server服务，访问 http://localhost:8020/application-dev.yml
 
-<div align="center"> <img src="https://github.com/heibaiying/spring-samples-for-all/blob/master/pictures/config-application-dev.png"/> </div>
 
 这里需要注意的拉取配置的时候，我们此时指定拉取的是 dev 配置，application.yml 实际 配置如下：
 
-<div align="center"> <img src="https://github.com/heibaiying/spring-samples-for-all/blob/master/pictures/config-dev.png"/> </div>
 
 这说明在用配置中心拉取配置的时候，和我们在本地开发的时候是一致的，配置是互补的，即 dev 中的实际配置应该是主配置和 dev 配置的结合，且遵循同名属性精确优先的原则。
 
@@ -158,7 +156,6 @@ spring:
 
 访问主配置：
 
-<div align="center"> <img src="https://github.com/heibaiying/spring-samples-for-all/blob/master/pictures/config-a.png"/> </div>
 
 
 
